@@ -11,7 +11,7 @@ Define eight links to append the ASIN to and open new tabs with the respective l
 3. Enable developer mode
 4. Click on "Load Unpacked Extension" and select the folder that contains the downloaded manifest file
 5. Right-Click on the Extension Icon and select "Options" from the drop-down. Define your links there.
-6. Go to the options menu @ chrome://extensions/shortcuts and set up the corresponding hotkeys. 
+6. Go to the options menu @ chrome://extensions/shortcuts and set up the corresponding hotkeys. <\n>
    Set hotkeys to "global" if you want to use them without having Chrome in focus.
 
 

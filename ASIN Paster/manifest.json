@@ -1,0 +1,94 @@
+{
+	"name":"ASIN Paster",
+	"description": "Takes ASIN from clipboard and opens new tab with respective amazon link. Set up links in extension options and their hotkeys under chrome://extensions/ ",
+	"version" : "1.0.0",
+	"manifest_version": 2,
+
+	"background": {
+    	"persistent": false,
+        "page": "background.html"
+  	},
+  	"permissions": ["clipboardRead","tabs","storage"],
+
+
+	"commands": {
+
+		"Slot1": {
+			"suggested_key": {
+				"default":"Ctrl+Shift+1",
+				"windows": "Ctrl+Shift+1",
+				"mac":"Command+Shift+1"
+			},
+			"description": "Hotkey for opening URL in Slot 1",
+			"global":true
+			
+		},		
+		"Slot2": {
+			"suggested_key": {
+				"default":"Ctrl+Shift+2",
+				"windows": "Ctrl+Shift+2",
+				"mac":"Command+Shift+2"
+			},
+			"description": "Hotkey for opening URL in Slot 2",
+			"global":true
+			
+		},
+		"Slot3": {
+			"suggested_key": {
+				"default":"Ctrl+Shift+3",
+				"windows": "Ctrl+Shift+3",
+				"mac":"Command+Shift+3"
+			},
+			"description": "Hotkey for opening URL in Slot 3",
+			"global":true
+			
+		},
+		"Slot4": {
+			"suggested_key": {
+				"default":"Ctrl+Shift+4",
+				"windows": "Ctrl+Shift+4",
+				"mac":"Command+Shift+4"
+			},
+			"description": "Hotkey for opening URL in Slot 4",
+			"global":true
+			
+		},
+		"Slot5": {
+			"description": "Hotkey for opening URL in Slot 5",
+			"global":true			
+		},		
+		"Slot6": {
+			"description": "Hotkey for opening URL in Slot 6",
+			"global":true			
+		},
+		"Slot7": {
+			"description": "Hotkey for opening URL in Slot 7",
+			"global":true			
+		},			
+		"Slot8": {
+			"description": "Hotkey for opening URL in Slot 8",
+			"global":true			
+		}	
+
+	},
+
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab" : false
+
+	},
+
+  	"icons": {
+    "16": "assets/ASIN_IconO_16.png",
+    "32": "assets/ASIN_IconO_32.png",
+    "48": "assets/ASIN_IconO_48.png",
+    "128": "assets/ASIN_IconO_128.png"
+  	},
+
+  	"browser_action": {
+    "default_icon": "assets/ASIN_IconO_128.png"
+	}
+
+
+}
+
